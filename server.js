@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(cors());
 app.use(express.json());
 const run = async () => {
-  await mongoose.connect("mongodb://127.0.0.1:27017/myDB");
+  await mongoose.connect('mongodb+srv://rssanjaykaviya:2324@cluster0.qo8pfme.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
   console.log("Connected to myDB");
 }
 
